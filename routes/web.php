@@ -34,3 +34,8 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
+
+// contact form post route - do nothing for now
+Route::post('/contact', function () {
+    return 'hi';
+})->name('contact');

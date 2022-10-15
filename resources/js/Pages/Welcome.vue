@@ -24,66 +24,48 @@ defineProps({
         </div>
 
         <div class="ml-5 mr-5 p-5">
-            <div v-if="canLogin" class="hidden p-5 sm:block">
-                <Link v-if="$page.props.user" :href="route('dashboard')" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</Link>
-
-                <template v-else>
-                    <Link :href="route('login')" class="text-md text-white underline">Log in</Link>
-
-                    <Link v-if="canRegister" :href="route('register')" class="ml-4 text-md text-white underline">Register</Link>
-                </template>
-            </div>
             <div class="mt-5 mb-5 p-5 bg-black/20 overflow-hidden shadow sm:rounded-lg">
                 <h1 class="text-6xl text-white">
-                    Laravel
+                    This domain is for sale!
                 </h1>
 
                 <h2 class="mt-6 text-white text-2xl">
-                    Laravel Jetstream provides a beautiful, robust starting point for your next Laravel application. Laravel is designed
-                    to help you build your application using a development environment that is simple, powerful, and enjoyable. We
-                    believe you should love expressing your creativity through programming, so we have spent time carefully crafting
-                    the Laravel ecosystem to be a breath of fresh air. We hope you love it.
+                    <p>If you are interested in buying this domain, please fill out the form below.</p>
+
+                    <form action="/contact" method="POST" class="mt-6">
+                        <input type="hidden" name="csrf" value="{{ csrf_token() }}">
+                        <div class="flex flex-col">
+                            <label for="name" class="text-white">Name</label>
+                            <input type="text" name="name" id="name" class="mt-1 p-2 rounded-lg border border-gray-300">
+                        </div>
+
+                        <div class="flex flex-col mt-4">
+                            <label for="email" class="text-white">Email</label>
+                            <input type="email" name="email" id="email" class="mt-1 p-2 rounded-lg border border-gray-300">
+                        </div>
+
+                        <div class="flex flex-col mt-4">
+                            <label for="message" class="text-white">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" class="mt-1 p-2 rounded-lg border border-gray-300"></textarea>
+                        </div>
+
+                        <div class="flex justify-end mt-4">
+                            <button type="submit" class="p-2 rounded-lg bg-green-500 text-white">Submit</button>
+                        </div>
+                    </form>
                 </h2>
             </div>
 
             <div class="flex justify-center mt-4 p-5 sm:items-center sm:justify-between">
                 <div class="text-center text-sm text-gray-500 sm:text-left">
                     <div class="flex items-center">
-                        <svg
-                            fill="none"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            class="-mt-px w-5 h-5 text-white"
-                        >
-                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-
-                        <a href="https://laravel.bigcartel.com" class="ml-1 text-white underline">
-                            Shop
-                        </a>
-
-                        <svg
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            viewBox="0 0 24 24"
-                            class="ml-4 -mt-px w-5 h-5 text-white"
-                        >
-                            <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                        </svg>
-
-                        <a href="https://github.com/sponsors/taylorotwell" class="ml-1 text-white underline">
-                            Sponsor
+                        <a href="https://domz.au" class="ml-1 text-white underline">
+                            Domz pty ltd
                         </a>
                     </div>
 
                     <div class="mt-4 text-center text-sm text-white sm:text-right sm:ml-0">
-                        Laravel v{{ laravelVersion }} (PHP v{{ phpVersion }}) {{ domain}}
+                        {{ domain }}
                     </div>
                 </div>
             </div>
