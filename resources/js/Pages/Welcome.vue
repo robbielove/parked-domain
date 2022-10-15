@@ -59,11 +59,11 @@ defineProps({
             <div class="flex justify-center mt-4 p-5 sm:items-center sm:justify-between">
                 <div class="text-center text-sm text-white sm:text-left">
                     <div class="flex items-center">
-                        <a href="https://" class="ml-1 text-white underline">
-                            call
-                        </a>
+                        <p class="ml-1 text-white">
+                            Or call:
+                        </p>
                     </div>
-                    <div class="mt-4 text-center text-lg text-white sm:text-right sm:ml-0">
+                    <div class="mt-4 text-center text-3xl text-white sm:text-right sm:ml-0">
                         <a href="tel:0731493433" class="ml-1 text-white underline">
                             07 31 493 433
                         </a>
