@@ -57,15 +57,21 @@ defineProps({
             </div>
 
             <div class="flex justify-center mt-4 p-5 sm:items-center sm:justify-between">
-                <div class="text-center text-sm text-gray-500 sm:text-left">
+                <div class="text-center text-sm text-white sm:text-left">
                     <div class="flex items-center">
                         <a href="https://domz.au" class="ml-1 text-white underline">
                             Domz pty ltd
                         </a>
                     </div>
-
+                    <div class="mt-4 text-center text-lg text-white sm:text-right sm:ml-0">
+                        <a href="tel:0731493433" class="ml-1 text-white underline">
+                            07 31 493 433
+                        </a>
+                    </div>
                     <div class="mt-4 text-center text-sm text-white sm:text-right sm:ml-0">
-                        {{ domain }}
+                        <a href="/" class="ml-1 text-white underline">
+                            {{ domain }}
+                        </a>
                     </div>
                 </div>
             </div>
