@@ -59,8 +59,8 @@ defineProps({
             <div class="flex justify-center mt-4 p-5 sm:items-center sm:justify-between">
                 <div class="text-center text-sm text-white sm:text-left">
                     <div class="flex items-center">
-                        <a href="https://domz.au" class="ml-1 text-white underline">
-                            Domz pty ltd
+                        <a href="https://" class="ml-1 text-white underline">
+                            call
                         </a>
                     </div>
                     <div class="mt-4 text-center text-lg text-white sm:text-right sm:ml-0">
