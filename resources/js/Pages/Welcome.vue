@@ -60,7 +60,7 @@ defineProps({
                 <div class="text-center text-sm text-white sm:text-left">
                     <div class="flex items-center">
                         <p class="ml-1 text-white">
-                            Or call:
+                            Or call📞:
                         </p>
                     </div>
                     <div class="mt-4 text-center text-3xl text-white sm:text-right sm:ml-0">
