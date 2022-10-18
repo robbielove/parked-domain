@@ -16,7 +16,9 @@ class ContactController extends Controller
             'message' => 'required',
         ]);
 
-        $message = "Contact form submitted by
+        $domain = request()->getHost();
+
+        $message = "($domain) Contact form submitted by
 {$request->name} ({$request->email})
 with message:
 {$request->message}";
