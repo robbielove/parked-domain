@@ -12,6 +12,7 @@
         "laravel/jetstream": "^2.12",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
+        "spatie/laravel-discord-alerts": "^1.2",
         "tightenco/ziggy": "^1.0"
     },
     "require-dev": {

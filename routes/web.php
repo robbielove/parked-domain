@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +36,4 @@ Route::middleware([
     })->name('dashboard');
 });
 
-// contact form post route - do nothing for now
-Route::post('/contact', function () {
-    return 'hi';
-})->name('contact');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
