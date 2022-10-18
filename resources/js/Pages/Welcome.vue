@@ -116,8 +116,8 @@ const submit = () => {
                         </a>
                     </div>
                     <div class="mt-4 text-center text-sm text-white sm:text-right sm:ml-0">
-                        <a href="/" class="ml-1 text-white underline">
-                            {{ domain }}
+                        <a href="https://domz.au" class="ml-1 text-white underline">
+                            Domz.au
                         </a>
                     </div>
                 </div>
